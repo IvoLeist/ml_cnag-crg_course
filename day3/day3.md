@@ -12,3 +12,4 @@
 - **finding the "key"**
 
 ## References
+- [medium optimal k](https://medium.com/analytics-vidhya/how-to-determine-the-optimal-k-for-k-means-708505d204eb)
