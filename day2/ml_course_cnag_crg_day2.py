@@ -1468,3 +1468,21 @@ get_clf_cm("iris_clf",iris_clf,iris.target_names,x_train,y_train,x_test,y_test)
 get_clf_performance("iris_clf",iris_clf,x_train,y_train,x_test,y_test)
 
 #%%
+#Bonus: Feature importance
+def f_importances(coef, names):
+    imp,names = zip(*sorted(zip(coef,names)))
+    plt.barh(range(len(names)), imp, align='center')
+    plt.yticks(range(len(names)), names)
+    plt.show()
+
+f_importances(iris_clf.coef_[0], iris.feature_names)
+
+#%% [markdown]
+"""
+Note: Getting the feature importance in a non-linear SVM is impossible:
+In linear SVM the resulting separating plane is in the same space as your input features. 
+Therefore its coefficients can be viewed as weights of the input's "dimensions".
+In other kernels, the separating plane exists in another space - a result of kernel transformation of the original space. 
+Its coefficients are not directly related to the input space
+"""
+# %%
