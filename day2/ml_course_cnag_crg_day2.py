@@ -1446,20 +1446,25 @@ iris=load_iris()
 # %% [markdown]
 """###### Solution"""
 
+#%%
 x_train, x_test, y_train, y_test = train_test_split(iris.data,iris.target)
 
+#%%
 iris_clf = svm.SVC(kernel='linear')
 iris_clf.fit(x_train, y_train)
 
+#%%
 test_df=appply_clf(iris_clf,iris,x_test,y_test)
 test_df.head()
 
+#%%
 accuracy = accuracy_score(y_test, iris_clf.predict(x_test))
 print(f'Mean accuracy score: {accuracy:.3}')
 
+#%%
 get_clf_cm("iris_clf",iris_clf,iris.target_names,x_train,y_train,x_test,y_test)
 
+#%%
 get_clf_performance("iris_clf",iris_clf,x_train,y_train,x_test,y_test)
-
 
 #%%
