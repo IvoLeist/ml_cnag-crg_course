@@ -1479,7 +1479,8 @@ f_importances(iris_clf.coef_[0], iris.feature_names)
 
 #%% [markdown]
 """
-Note: Getting the feature importance in a non-linear SVM is impossible:
+Note
+Getting the feature importance in a non-linear SVM is impossible!
 In linear SVM the resulting separating plane is in the same space as your input features. 
 Therefore its coefficients can be viewed as weights of the input's "dimensions".
 In other kernels, the separating plane exists in another space - a result of kernel transformation of the original space. 
