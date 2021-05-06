@@ -1,0 +1,7 @@
+version: '3'
+services:
+    notebook:
+        build: .
+        image: ml_cnag-crg_notebook:latest
+        ports:
+            - 8888:8888
