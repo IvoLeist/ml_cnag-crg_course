@@ -11,6 +11,9 @@ RUN apt-get update && \
 USER $NB_UID
 
 # Install Python 3 packages
+RUN conda install --quiet --yes -c bioconda \
+    'scanpy=1.7.*'
+
 RUN conda install --quiet --yes \
     'matplotlib-base=3.4.*' \
     'pandas=1.2.*' \
