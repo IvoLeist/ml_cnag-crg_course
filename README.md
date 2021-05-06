@@ -39,7 +39,7 @@ docker run -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes ml_cnag-crg_notebook
 docker-compose run
 
 #lab
-docker-compose run -e JUPYTER_ENABLE_LAB=yes
+JUPYTER_ENABLE_LAB=yes docker-compose up
 ```
 
 ## Contributors
