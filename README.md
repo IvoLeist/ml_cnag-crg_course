@@ -39,7 +39,9 @@ docker run -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes ml_cnag-crg_notebook
 docker-compose run
 
 #lab
-JUPYTER_ENABLE_LAB=yes docker-compose up
+#uncomment below in docker-compose.yaml to use jupyterlab
+    #environment: 
+        #- JUPYTER_ENABLE_LAB=yes
 ```
 
 ## Contributors
