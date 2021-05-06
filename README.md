@@ -17,7 +17,7 @@ Every session is based on a jupyter notebook that you can execute via https://co
 
 ## Run it locally
 
-Navigate on the terminal inside this folder and run it with either:
+Navigate on the terminal into this folder and run it with either:
 
 **jupyter notebook/lab**:
 >`jupyter notebook` or `jupyter lab`
