@@ -5,5 +5,5 @@ services:
         image: ml_cnag-crg_notebook:latest
         ports:
             - 8888:8888
-        environment: 
-            - JUPYTER_ENABLE_LAB=no
+        #environment: 
+        #    - JUPYTER_ENABLE_LAB=yes
