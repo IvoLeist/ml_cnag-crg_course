@@ -30,7 +30,7 @@ docker build -t ml_cnag-crg_notebook .
 docker run -p 8888:8888 ml_cnag-crg_notebook 
 
 #lab
-docker run -p 8888:8888 ml_cnag-crg_notebook -e JUPYTER_ENABLE_LAB=yes
+docker run -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes ml_cnag-crg_notebook
 ```
 
 **docker-compose**:
