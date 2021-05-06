@@ -17,8 +17,30 @@ Every session is based on a jupyter notebook that you can execute via https://co
 
 ## Run it locally
 
-- jupyter notebook/lab: on the terminal `jupyter notebook` or `jupyter lab`
-- docker: on the terminal (or vscode) `docker-compose up`
+Navigate on the terminal in inside this folder and run it with either:
+
+**jupyter notebook/lab**:
+>`jupyter notebook` or `jupyter lab`
+
+**docker**:
+```
+docker build -t ml_cnag-crg_notebook .
+
+#notebook
+docker run -p 8888:8888 ml_cnag-crg_notebook 
+
+#lab
+docker run -p 8888:8888 ml_cnag-crg_notebook -e JUPYTER_ENABLE_LAB=yes
+```
+
+**docker-compose**:
+```
+#notebook
+docker-compose run
+
+#lab
+docker-compose run -e JUPYTER_ENABLE_LAB=yes
+```
 
 ## Contributors
 
@@ -26,7 +48,7 @@ CRG-CNAG PhD students:
 - Savvas Kourtis
 - Thnee Mackensen
 - Sergi Beneyto Calabuig
-- Ivo Leist
+- Ivo Christopher Leist ([![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/ivoLeist.svg?style=social&label=Follow%20%40ivoLeist)](https://twitter.com/ivoLeist))
 - Xavier Hernandez Alias
 - Miquel Anglada Girotto
 - Anamaria Elek
