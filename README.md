@@ -15,6 +15,11 @@ Every session is based on a jupyter notebook that you can execute via https://co
 - `matplotlib`
 - `seaborn`
 
+## Run it locally
+
+- jupyter notebook/lab: on the terminal `jupyter notebook` or `jupyter lab`
+- docker: on the terminal (or vscode) `docker-compose up`
+
 ## Contributors
 
 CRG-CNAG PhD students:
@@ -26,4 +31,3 @@ CRG-CNAG PhD students:
 - Miquel Anglada Girotto
 - Anamaria Elek
 - Sonal Rashmi
-
